@@ -1,0 +1,55 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    color: hsl(220, 15%, 55%); 
+    background-color: hsl(212, 45%, 89%);
+}
+
+h1, h2 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+}
+
+img {
+    max-width: 100%;
+}
+
+.qr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; 
+    /* Need min-height because flex wants things as small as possible so without having a 100vh flex won't work to bring qr-wrapper to the center */
+}
+
+.qr-wrapper {
+    max-width: 350px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.qr-wrapper__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-wrapper__image__pic {
+    border-radius: 12px;
+}
+
+.qr-wrapper__text {
+    width: 85%;
+}
